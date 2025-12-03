@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
 body {
     background-color: #f5f5f5;
     color: #333;
@@ -16,7 +23,7 @@ header h2 {
 .Funcciones {
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;
+    text-align: center;
     justify-content: center;
     margin-bottom: 40px;
 }
@@ -147,4 +154,10 @@ button.estadi:hover {
 .rojo {
     color: red;
     font-weight: bold;
+}
+
+.centrar-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
