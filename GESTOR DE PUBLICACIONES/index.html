@@ -1,0 +1,47 @@
+<head>
+    <meta charset="UTF-8">
+    <title>GESTOR DE PUBLICACIONES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <section>
+        <h2>REGISTRO DE PUBLICACIONES</h2>
+        <form id="formpubli">
+            <input type="text" id="nombre" placeholder="Titulo" required>
+            <textarea id="contenido" placeholder="Texto" rows="5" required></textarea>
+            <select id="categoria" required>
+                <option value="">Categoria</option>
+                <option value="Noticia">Noticia</option>
+                <option value="Evento">Evento</option>
+                <option value="Anuncio">Anuncio</option>
+            </select>
+            <button type="submit">Añadir publicación</button>
+        </form>
+        <button id="btnBorrar">Borrar todas las PUBLICACIONES</button>
+    </section>
+
+    <section>
+        <h2>CREAR CAMPAÑAS</h2>
+        <form id="formCampaña">
+            <input type="text" id="tituloCampaña" placeholder="Nombre de la campaña" required>
+            <button type="submit">Crear campaña</button>
+        </form>
+        <div id="listaCampañas" class="grid"></div>
+    </section>
+
+    <section>
+        <h2>LISTADO DE PUBLICACIONES</h2>
+        <section>
+            <input type="text" id="busqueda" placeholder="Buscar por nombre o categoría">
+            <div id="lista" class="grid"></div>
+        </section>
+
+        <div id="listaPublicaciones" class="grid"></div>
+    </section>
+
+    <script src="Main.js"></script>
+</body>
+
+</html>
