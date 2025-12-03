@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pokedex</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Pokedex</h2>
+    </header>
+
+    <section class="funciones">
+        <section class="pokemons">
+            <h3>Registrar nuevo Pokémon</h3>
+            <form id="form-pokemon" action="" method="post">
+                <ul>
+                    <li>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required />
+                    </li>
+                    <li>
+                        <label for="nivel">Nivel:</label>
+                        <input type="number" id="nivel" name="nivel" min="1" max="100" required />
+                    </li>
+                    <li>
+                        <label for="Tipo">Tipo:</label>
+                        <select id="Tipo" name="Tipo" required>
+                            <option value="Fuego">🔥 Fuego</option>
+                            <option value="Agua" selected>💧 Agua</option>
+                            <option value="Planta">🌿 Planta</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button type="submit">Añadir Pokémon</button>
+                    </li>
+                </ul>
+            </form>
+        </section>
+
+        <section class="estadisticas">
+            <h3>Estadísticas</h3>
+            <div class="tipo" id="estad-fuego">Fuego: 0</div>
+            <div class="tipo" id="estad-agua">Agua: 0</div>
+            <div class="tipo" id="estad-planta">Planta: 0</div>
+        </section>
+        <button class="estadi" id="btn-estadisticas">Generar Estadísticas</button>
+        <button class="estadi" id="btn-borrar">Borrar todos los Pokémon</button>
+    </section>
+
+    <section class="filtros">
+        <label for="filtro"><strong>Buscar Pokémon</strong></label>
+        <input type="text" id="filtro" placeholder="Filtrar por nombre o tipo" />
+    </section>
+
+    <h2>Lista de Pokémon</h2>
+    <div id="lista-pokemon" class="lista-pokemons"></div>
+
+    <script src="pokemon.js"></script>
+       
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+}
+
+
+header h2 {
+    text-align: center;
+    color: #ff3e3e;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+
+.Funcciones {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.pokemons {
+    background-color: #fff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.pokemons h3 {
+    text-align: center;
+    color: #ff3e3e;
+    margin-bottom: 15px;
+}
+
+.pokemons form ul {
+    list-style: none;
+}
+
+.pokemons form li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.pokemons label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.pokemons input,
+.pokemons select,
+.pokemons button {
+    padding: 8px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+
+.pokemons button {
+    background-color: #ff3e3e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pokemons button:hover {
+    background-color: #e63636;
+}
+
+
+.estadisticas {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.estadisticas h3 {
+    color: #ff3e3e;
+    margin-bottom: 15px;
+}
+
+.tipo {
+    display: inline-block;
+    background-color: #fff;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+
+
+button.estadi {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.estadi:hover {
+    background-color: #45a049;
+}
+
+
+.lista-pokemons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.filtros {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filtros select {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.poke {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+
+}
+
+.rojo {
+    color: red;
+    font-weight: bold;
+}
